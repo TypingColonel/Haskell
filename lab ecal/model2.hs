@@ -9,8 +9,8 @@ generateSequence x
 
 quickSort :: [Int] -> [Int]
 quickSort [] = []
-quickSort [x] = [x]
-quickSort (x: xs) = quickSort ([y | y <- xs, y > x] ++ [x] ++ [y | y <- xs, y <= x])
+-- quickSort [x] = [x]
+quickSort (x: xs) = quickSort [y | y <- xs, y > x] ++ [x] ++ quickSort [y | y <- xs, y <= x]
 
 longestConsecutiveDescending :: [Int] -> [Int]
 longestConsecutiveDescending [] = []
