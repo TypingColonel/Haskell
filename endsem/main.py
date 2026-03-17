@@ -14,3 +14,4 @@ raise RecursionError
 #you can return a function to map and make it work 
 # eg : map (clouser(value), [2, 31])
 # here clouser will return a function 
+# learn non local
