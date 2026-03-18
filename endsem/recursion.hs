@@ -66,3 +66,8 @@ main :: IO()
 
 main = do 
     -- show()
+
+-- indexing a list in haskell
+
+let m = list !! 3
+-- gives the fourth element in the list
